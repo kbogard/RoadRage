@@ -1,0 +1,37 @@
+<%= form_for(@driving_log) do |f| %>
+  <% if @driving_log.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@driving_log.errors.count, "error") %> prohibited this driving_log from being saved:</h2>
+
+      <ul>
+      <% @driving_log.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Drive_Date %><br />
+    <%= f.text_field :Drive_Date %>
+  </div>
+  <div class="field">
+    <%= f.label :Verifiers_Initials %><br />
+    <%= f.text_field :Verifiers_Initials %>
+  </div>
+  <div class="field">
+    <%= f.label :Driving_Time %><br />
+    <%= f.text_field :Driving_Time %>
+  </div>
+  <div class="field">
+    <%= f.label :Night_Driving %><br />
+    <%= f.check_box :Night_Driving %>
+  </div>
+  <div class="field">
+    <%= f.label :Comments %><br />
+    <%= f.text_field :Comments %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,4 +1,7 @@
 RoadRage::Application.routes.draw do
+  resources :driving_logs
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

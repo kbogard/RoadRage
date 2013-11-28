@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Drive_Date: 
+  Verifiers_Initials: 
+  Driving_Time: 
+  Night_Driving: 
+  Comments: MyString
+
+two:
+  Drive_Date: 
+  Verifiers_Initials: 
+  Driving_Time: 
+  Night_Driving: 
+  Comments: MyString

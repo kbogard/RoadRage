@@ -1,0 +1,2 @@
+module DrivingLogsHelper
+end

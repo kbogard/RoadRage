@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Drive date:</b>
+  <%= @driving_log.Drive_Date %>
+</p>
+
+<p>
+  <b>Verifiers initials:</b>
+  <%= @driving_log.Verifiers_Initials %>
+</p>
+
+<p>
+  <b>Driving time:</b>
+  <%= @driving_log.Driving_Time %>
+</p>
+
+<p>
+  <b>Night driving:</b>
+  <%= @driving_log.Night_Driving %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%= @driving_log.Comments %>
+</p>
+
+
+<%= link_to 'Edit', edit_driving_log_path(@driving_log) %> |
+<%= link_to 'Back', driving_logs_path %>
