@@ -14,11 +14,11 @@
 
 <% @driving_logs.each do |driving_log| %>
   <tr>
-    <td><%= driving_log.Drive_Date %></td>
-    <td><%= driving_log.Verifiers_Initials %></td>
-    <td><%= driving_log.Driving_Time %></td>
-    <td><%= driving_log.Night_Driving %></td>
-    <td><%= driving_log.Comments %></td>
+    <td><%= driving_log.drive_date %></td>
+    <td><%= driving_log.verifiers_initials %></td>
+    <td><%= driving_log.driving_time %></td>
+    <td><%= driving_log.night_driving %></td>
+    <td><%= driving_log.comments %></td>
     <td><%= link_to 'Show', driving_log %></td>
     <td><%= link_to 'Edit', edit_driving_log_path(driving_log) %></td>
     <td><%= link_to 'Destroy', driving_log, method: :delete, data: { confirm: 'Are you sure?' } %></td>

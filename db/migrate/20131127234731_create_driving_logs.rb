@@ -1,11 +1,11 @@
 class CreateDrivingLogs < ActiveRecord::Migration
   def change
-    create_table :Driving_Logs do |t|
-      t.date :Drive_Date
-      t.string :Verifiers_Initials
-      t.time :Driving_Time
-      t.boolean :Night_Driving
-      t.string :Comments
+    create_table :driving_logs do |t|
+      t.date :drive_date
+      t.string :verifiers_initials
+      t.time :driving_time
+      t.boolean :night_driving
+      t.string :comments
 
       t.timestamps
     end

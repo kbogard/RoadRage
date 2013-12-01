@@ -1,9 +1,9 @@
 class DrivingLog < ActiveRecord::Base
-  attr_accessible :Comments, :Drive_Date, :Driving_Time, :Night_Driving, :Verifiers_Initials
+  attr_accessible :comments, :drive_date, :driving_time, :night_driving, :verifiers_initials
 
-  validates :Drive_Date, presence: true
-  validates :Verifiers_Initials, presence: true
-  validates :Driving_Time, presence: true
-  
+  validates :drive_date, presence: true
+  validates :verifiers_initials, presence: true
+  validates :driving_time, presence: true
+
 end
 

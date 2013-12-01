@@ -5,9 +5,9 @@
 #   gem 'sqlite3'
 development:
     adapter: postgresql
-    database: postgres
+    database: postgres roadRage_Dev
     host: localhost
-    username: rails
+    username: roadRageAdmin
     password: hustle
     pool: 5
     timeout: 5000
@@ -22,9 +22,9 @@ development:
 
 test: &test
     adapter: postgresql
-    database: postgres_test
+    database: postgres roadRage_Test
     host: localhost
-    username: rails
+    username: roadRageAdmin
     password: hustle
     pool: 5
     timeout: 5000
